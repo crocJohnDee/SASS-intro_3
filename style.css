@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav {
+  height: 38px;
+  padding: 10px 0;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  width: 260px;
+  margin: 0 auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: #016690;
+}
+
+header {
+  background: url(images_website/header.jpg);
+  background-size: cover;
+  height: 250px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  width: 175px;
+  margin: 0 auto;
+}
+
+.card {
+  padding: 15px;
+  width: 95%;
+  margin: 15px auto;
+  background-color: #e0ddb2;
+  border: 1px solid #dad6ab;
+}
+
+.img {
+  max-width: 400px;
+  height: 250px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.img-mountain {
+  background: url(images_website/mountain.jpg);
+  background-size: cover;
+}
+
+.img-surfer {
+  background: url(images_website/surfer.jpg);
+  background-size: cover;
+}
+
+.img-tree {
+  background: url(images_website/tree.jpg);
+  background-size: cover;
+}
+
+aside {
+  width: 95%;
+  margin: 15px auto;
+  border: 1px solid #dad6ab;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+article {
+  width: 95%;
+  margin: 15px auto;
+  padding: 10px;
+}
+
+footer {
+  background-color: #016690;
+  padding: 10px;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  nav ul {
+    margin: 0;
+    float: right;
+  }
+  header {
+    height: 380px;
+    padding: 40px;
+  }
+  h1 {
+    width: 100%;
+  }
+  .card {
+    width: 750px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .img {
+    margin: 0;
+    width: 200px;
+    height: 200px;
+  }
+  .card-text {
+    width: 500px;
+    margin-left: 10px;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+  }
+  main aside {
+    width: 25%;
+  }
+  main article {
+    width: 50%;
+  }
+  footer ul {
+    width: 250px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card {
+    margin: 15px;
+    width: 45%;
+  }
+  .img {
+    width: 268px;
+    height: 124px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

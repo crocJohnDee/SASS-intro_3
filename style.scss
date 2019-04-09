@@ -1,0 +1,101 @@
+$card-bg: #e0ddb2;
+$border: #dad6ab;
+$blue: #016690;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 38px;
+    padding: 10px 0;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        width: 260px;
+        margin: 0 auto;
+    }
+    a{
+        text-decoration: none;
+        color: $blue;
+    }
+}
+
+header {
+    background: url(images_website/header.jpg);
+    background-size: cover;
+    height: 250px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    width: 175px;
+    margin: 0 auto;
+}
+
+.card {
+    padding: 15px;
+    width: 95%;
+    margin: 15px auto;
+    background-color: $card-bg;
+    border: 1px solid $border;
+}
+
+.img {
+    max-width: 400px;
+    height: 250px;;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+@mixin img($url) {
+    background: $url;
+    background-size: cover;
+}
+
+.img-mountain {
+    @include img(url(images_website/mountain.jpg));
+}
+
+.img-surfer {
+    @include img(url(images_website/surfer.jpg));
+}
+
+.img-tree {
+    @include img(url(images_website/tree.jpg));
+}
+
+
+aside {
+    width: 95%;
+    margin: 15px auto;
+    border: 1px solid $border;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+article{
+    width: 95%;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+footer {
+    background-color: $blue;
+    padding: 10px;
+    ul {
+        display: flex;
+        justify-content: space-around;  
+        list-style: none;
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+@import "tablet.scss";
